@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class MyRoutes {
   static String homeroute = '/';
   static String loginRoute = '/login';
