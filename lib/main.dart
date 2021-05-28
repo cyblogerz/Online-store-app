@@ -13,10 +13,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  //function first letter small,
+  //Class - caps
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       initialRoute: '/',
       routes: {
         '/': (context) => LoginPage(),
