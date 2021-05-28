@@ -14,10 +14,15 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          color: Colors.red,
-          child: Text('Hello 8 hours of flutter'),
+        appBar: AppBar(
+          title: Text('Catalog App'),
         ),
+        body: Center(
+          child: Container(
+            child: Text('Hello 8 hours of flutter'),
+          ),
+        ),
+        drawer: Drawer(),
       ),
     );
   }
