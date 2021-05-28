@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/screens/loginpage.dart';
+import 'screens/homepage.dart';
+import 'screens/loginpage.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,17 +16,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Catalog App'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello 8 hours of flutter'),
-          ),
-        ),
-        drawer: Drawer(),
-      ),
+      theme: ThemeData.dark(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/home': (context) => HomePage(),
+        '/login': (context) => LoginPage(),
+      },
     );
   }
 }
