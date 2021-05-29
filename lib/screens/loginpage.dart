@@ -29,6 +29,7 @@ class _LoginPageState extends State<LoginPage> {
   //Global key can be accessed from anywhere
   @override
   Widget build(BuildContext context) {
+    //context - location of widget insided the elememnt tree
     return Scaffold(
         body: SingleChildScrollView(
       // this can fix overlow in smaller devices
