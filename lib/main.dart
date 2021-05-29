@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         fontFamily: GoogleFonts.lato().fontFamily,
         primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: MyRoutes.homeroute,
       routes: {
         MyRoutes.homeroute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
